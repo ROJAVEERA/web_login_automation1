@@ -4,6 +4,8 @@ MAINTAINER roja <krojakumari99@gmail.com>
 
 WORKDIR /usr/apps/hello-docker/
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get -y update && apt-get install nodejs npm -y
 
 #RUN ln -s /usr/bin/nodejs /usr/bin/node........;;;;;
