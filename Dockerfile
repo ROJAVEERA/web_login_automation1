@@ -1,14 +1,10 @@
 FROM ubuntu:latest
 
-MAINTAINER ybmsr <ybmadhu404@gmail.com>
+MAINTAINER roja <krojakumari99@gmail.com>
 
 WORKDIR /usr/apps/hello-docker/
 
-RUN apt-get -y update
-
-RUN apt-get install -y nodejs
-
-RUN apt-get install -y npm
+RUN apt-get -y update && apt-get install nodejs npm -y
 
 #RUN ln -s /usr/bin/nodejs /usr/bin/node........;;;;;
 
